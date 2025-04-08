@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- Primary Meta Tags -->
+<title>YISADA TECHNOLOGY - Innovating Tomorrow, Today</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="title" content=" Yisada Technology">
+<meta name="author" content="Dams">
+
+<!-- Social tags -->
+<meta name="keywords" content="Yisada Technology, software development, AI solutions, artificial intelligence, data analytics, IT consultancy, enterprise solutions, SMB solutions, business technology, digital transformation, cloud computing, machine learning, automation, cybersecurity, web development, UI/UX design, custom software, business intelligence, tech consulting, Germany, innovative technology, IT services">
+<meta name="description" content="Yisada Technology – Innovating Tomorrow, Today. We provide cutting-edge software development, AI solutions, data analytics, and IT consultancy for SMBs and enterprises in Germany and beyond.">
+
+<!-- Schema.org markup for Google -->
+<meta itemprop="name" content="Yisada Technology">
+<meta itemprop="description" content="Yisada Technology is a Germany-based company specializing in software development, AI solutions, data analytics, and IT consultancy. We empower SMBs and enterprises with innovative technology.">
+<meta itemprop="image" content="https://yourwebsite.com/path-to-image.jpg">
+
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@yisadatech">
+<meta name="twitter:title" content="Yisada Technology – Innovating Tomorrow, Today">
+<meta name="twitter:description" content="We offer software development, AI solutions, data analytics, and IT consultancy for SMBs and enterprises. Based in Germany, delivering innovation worldwide.">
+<meta name="twitter:creator" content="@yisadatech">
+<meta name="twitter:image" content="https://yisadatechnology.com/./assets/img/favicon/yisada.png">
+
+<!-- Open Graph data -->
+<meta property="og:title" content="Yisada Technology – Innovating Tomorrow, Today" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://yisadatechnology.com" />
+<meta property="og:image" content="https://yourwebsite.com/path-to-image.jpg"/>
+<meta property="og:description" content="We provide cutting-edge software development, AI solutions, data analytics, and IT consultancy services for SMBs and enterprises. Based in Germany, delivering innovation worldwide." />
+<meta property="og:site_name" content="Yisada Technology" />
+
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="120x120" href="./assets/img/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/yisada.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/yisada.png">
+<link rel="manifest" href="./assets/img/favicon/site.webmanifest">
+<link rel="mask-icon" href="./assets/img/favicon/safari-pinned-tab.svg" color="#ffffff">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+
+<!-- Fontawesome -->
+<link type="text/css" href="./vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+<!-- Pixel CSS -->
+<link type="text/css" href="./css/neumorphism.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+<style>
+    .hslide-in {
+        opacity: 0;
+        transform: translateX(-50px);
+        animation: slideIn 2s ease-out forwards;
+    }
+
+    .slide-in {
+        opacity: 0;
+        transform: translateX(-50px);
+        transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+    }
+
+    .slide-in.aos-animate {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .service-box {
+        opacity: 0;
+        transform: translateX(50px);
+        transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+    }
+
+    .service-box.aos-animate {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+     .animate-slide-down {
+        opacity: 0;
+        transform: translateY(-30px);
+        animation: slideDown 1.8s ease-out forwards;
+    }
+
+     @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .hero-title {
+    font-size: 4.5rem; /* Bigger text */
+    color: black; /* Keeps it black */
+    text-shadow: 5px 7px 5px rgba(0, 0, 4, 2); /* Soft bottom shadow */
+    opacity: 0; /* Initially hidden */
+    transform: translateY(50px); /* Start position */
+    }
+
+    .hero-subtitle {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    /* Bounce Effect */
+    @keyframes bounceEffect {
+        0% { transform: translateY(0); }
+        30% { transform: translateY(-10px); }
+        50% { transform: translateY(5px); }
+        100% { transform: translateY(0); }
+    }
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <header class="header-global">
+    <nav id="navbar-main" aria-label="Primary navigation" class="navbar navbar-main navbar-expand-lg navbar-theme-primary headroom navbar-light navbar-transparent navbar-theme-primary">
+        <div class="container position-relative">
+            <a class="navbar-brand shadow-soft py-2 px-3 rounded border border-light mr-lg-4" href="./index.html">
+                <img class="navbar-brand-dark" src="./assets/img/brand/yisada.png" style="height:35px;" alt="Logo light">
+                <img class="navbar-brand-light" src="./assets/img/brand/yisada.png" style="height:35px;" alt="Logo dark">
+            </a>
+            <div class="navbar-collapse collapse" id="navbar_global">
+                <div class="navbar-collapse-header">
+                    <div class="row">
+                        <div class="col-6 collapse-brand">
+                            <a href="./index.html" class="navbar-brand shadow-soft py-2 px-3 rounded border border-light">
+                                <img src="./assets/img/brand/yisada.png" alt="Yisada logo">
+                            </a>
+                        </div>
+                        <div class="col-6 collapse-close">
+                            <a href="#navbar_global" class="fas fa-times" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" title="close" aria-label="Toggle navigation"></a>
+                        </div>
+                    </div>
+                </div>
+                <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+                    <li><a class="dropdown-item" href="index.html">Home</a></li>
+                    <li><a class="dropdown-item" href="./html/pages/about.html">About</a></li>
+                    <li><a class="dropdown-item" href="./html/pages/services.html">Services</a></li>
+                    <!-- <li><a class="dropdown-item" href="./html/pages/blogs.html">Blog</a></li> -->
+                    <li><a class="dropdown-item" href="./html/pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="d-flex align-items-center">
+                <a href="#" target="_blank" class="btn btn-primary text-secondary mr-3"><i class="far fa-calendar-alt mr-2"></i> Free Consultation</a>
+                 <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+</header>
+    
+    <main>
+        
+    <!-- Hero Section -->
+    <section class="section bg-soft pb-5 overflow-hidden z-2">
+        <div class="container z-2">
+            <div class="row justify-content-center text-center pt-6">
+                <div class="col-lg-8 col-xl-8">
+                    <h1 class="display-1 fw-bold hero-title">Yisada Technology</h1> <hr>
+                    <p class="lead px-md-6 mb-5 hero-subtitle">
+                        Empowering businesses with <strong>cutting-edge AI solutions, software development, and IT consulting.</strong> Let’s innovate together!
+                    </p>
+                    <div class="d-flex flex-column flex-wrap flex-md-row justify-content-md-center mb-5">
+                        <a href="#" class="btn btn-primary mb-3 mb-lg-0 mr-3">
+                            <i class="fas fa-paper-plane-alt mr-2"></i> Get Started
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+        <!-- After Hero/What We Are -->
+        <section class="section section-lg pt-0">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h2 class="h3 mb-4">What We Do</h2>
+                        <a class="btn btn-primary" href="./contact.html"><span class="fas fa-book-reader mr-2"></span>Our works</a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="card bg-primary shadow-soft border-light p-4">
+                            <div class="row">
+                                <div class="col-12 col-lg-4 px-md-0 mb-4 mb-lg-0 slide-in" data-aos="fade-left" data-aos-duration="1500">
+                                    <div class="card-body text-center bg-primary py-5">
+                                        <div class="icon icon-shape shadow-inset border-light rounded-circle mb-3">
+                                            <span class="far fa-star"></span>
+                                        </div>
+                                        <h2 class="h4">We Create</h2>
+                                        <p class="mb-0">Turning data into strategic insights for smarter decisions.</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4 px-md-0 mb-4 mb-lg-0 slide-in" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1500">
+                                    <div class="card-body text-center bg-primary py-5">
+                                        <div class="icon icon-shape shadow-inset border-light rounded-circle mb-3">
+                                            <span class="fas fa-bullseye"></span>
+                                        </div>
+                                        <h2 class="h4">We Automate</h2>
+                                        <p class="mb-0">AI-powered automation that saves time and boosts efficiency.</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4 px-md-0 slide-in" data-aos="fade-left" data-aos-delay="600" data-aos-duration="1500">
+                                    <div class="card-body text-center bg-primary py-5">
+                                        <div class="icon icon-shape shadow-inset border-light rounded-circle mb-3">
+                                            <span class="fas fa-puzzle-piece"></span>
+                                        </div>
+                                        <h2 class="h4">We Deploy</h2>
+                                        <p class="mb-0">Seamless AI integration for real-world impact.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of What We Do  -->
+
+        <!-- Mission & Vision Section -->
+        <section class="section section-lg" id="mission-vision">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h2 class="h3 mb-4">Our Mission & Vision</h2>
+                        <p class="text-muted">Discover our commitment to innovation and business transformation.</p>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12 col-md-6" data-aos="fade-in" data-aos-delay="600" data-aos-duration="1500">
+                        <div class="card shadow border-light p-4 text-center">
+                            <div class="card-body">
+                                <h3 class="h5">Mission Statement</h3>
+                                <p>At Yisada Technology, our mission is to drive business transformation by leveraging AI, automation, and software development to create intelligent, scalable, and efficient solutions for businesses and industries across Germany and beyond.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6" data-aos="fade-in" data-aos-delay="1200" data-aos-duration="1500">
+                        <div class="card shadow border-light p-4 text-center">
+                            <div class="card-body">
+                                <h3 class="h5">Vision Statement</h3>
+                                <p>We envision a future where AI and software automation empower businesses, optimize industries, and enhance lives through cutting-edge, ethical, and impactful technology solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Mission & Vision Section -->
+
+
+        <!-- Our Services -->
+        <section class="section section-lg" id="services">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h2 class="h3 mb-4">Our AI-Powered Solutions</h2>
+                        <p class="text-muted">We provide cutting-edge AI solutions to automate and enhance business operations across various industries.</p>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12 col-md-4 service-box" data-aos="fade-right" data-aos-duration="1500">
+                        <div class="icon-box text-center">
+                            <div class="icon icon-shape icon-lg bg-soft shadow-soft border border-light rounded-circle mb-3">
+                                <span class="fas fa-robot"></span>
+                            </div>
+                            <h3 class="h5 my-3">AI Chatbots</h3>
+                            <p>Engage customers 24/7 with smart, responsive AI-powered chatbots for your business.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 service-box" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1500">
+                        <div class="icon-box text-center">
+                            <div class="icon icon-shape icon-lg bg-soft shadow-soft border border-light rounded-circle mb-3">
+                                <span class="fas fa-chart-line"></span>
+                            </div>
+                            <h3 class="h5 my-3">Data Analytics</h3>
+                            <p>Transform raw data into actionable insights to drive informed business decisions.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 service-box" data-aos="fade-right" data-aos-delay="600" data-aos-duration="1500">
+                        <div class="icon-box text-center">
+                            <div class="icon icon-shape icon-lg bg-soft shadow-soft border border-light rounded-circle mb-3">
+                                <span class="fas fa-cloud"></span>
+                            </div>
+                            <h3 class="h5 my-3">Cloud Solutions</h3>
+                            <p>Scalable cloud-based applications for efficient business operations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Our Services -->
+
+        <!-- Why Choose Us -->
+        <div class="row">
+            <div class="col text-center">
+                <div class="mt-6 mb-5">
+                    <span class="h5 text-center">Why Choose Us</span>
+                </div>
+            </div>
+        </div>
+        <!-- End of Title -->
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <div class="alert alert-secondary shadow-soft slide-up" role="alert" data-aos="slide-up" data-aos-duration="1500">
+                    <span class="alert-inner--icon"><span class="fas fa-lightbulb"></span></span>
+                    <span class="alert-inner--text"><strong>Innovative Solutions</strong> We leverage cutting-edge AI and automation to drive digital transformation for businesses.</span>
+                </div>
+                <div class="alert alert-success shadow-soft slide-up" role="alert" data-aos="slide-up" data-aos-delay="200" data-aos-duration="1500">
+                    <span class="alert-inner--icon"><span class="far fa-handshake"></span></span>
+                    <span class="alert-inner--text"><strong>Client-Centric Approach</strong> We prioritize your needs, ensuring tailored solutions that align with your business goals.</span>
+                </div>
+                <div class="alert alert-info shadow-soft slide-up" role="alert" data-aos="slide-up" data-aos-delay="400" data-aos-duration="1500">
+                    <span class="alert-inner--icon"><span class="fas fa-cogs"></span></span>
+                    <span class="alert-inner--text"><strong>Seamless Integration</strong> Our solutions are designed for easy adoption and minimal disruption to existing workflows.</span>
+                </div>
+                <div class="alert alert-danger shadow-soft slide-up" role="alert" data-aos="slide-up" data-aos-delay="600" data-aos-duration="1500">
+                    <span class="alert-inner--icon"><span class="fas fa-shield-alt"></span></span>
+                    <span class="alert-inner--text"><strong>Security & Reliability</strong> We prioritize data security and system stability to ensure seamless performance.</span>
+                </div>
+            </div>
+        </div>
+        <!-- End Why Choose Us -->
+
+
+        <!-- Testimonials Section --> <br>
+        <section class="section bg-primary pt-0 section-lg">
+            <div class="container">
+                 <div class="row">
+                    <div class="col text-center">
+                        <div class="mt-6 mb-5">
+                            <span class="h5 text-center">What Our Client Say Us</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <!-- Carousel -->
+                        <div id="testimonialCarousel" class="carousel slide shadow-soft border border-light p-4 rounded" data-ride="carousel" data-aos="slide-up" data-aos-duration="1500">
+                            <div class="carousel-inner rounded">
+                                <div class="carousel-item active text-center">
+                                    <p class="text-black">"Yisada transformed my career! The services are top-notch, and the staff are highly knowledgeable. Highly recommend!"</p>
+                                    <h5 class="text-black mt-3">- John Doe</h5>
+                                </div>
+                                <div class="carousel-item text-center">
+                                    <p class="text-black">"I loved the hands-on approach to learning. The mentorship and guidance I received were invaluable!"</p>
+                                    <h5 class="text-black mt-3">- Jane Smith</h5>
+                                </div>
+                                <div class="carousel-item text-center">
+                                    <p class="text-black">"A fantastic experience! The skills I learned helped me land my first job in tech."</p>
+                                    <h5 class="text-black mt-3">- Alex Johnson</h5>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        <!-- End of Carousel -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Testimonials Section -->
+
+
+        <!-- Contact Us -->
+            <div class="section section-lg pt-0">
+                <div class="container">
+                    <!-- Title -->
+                    <div class="row">
+                        <div class="col text-center">
+                            <h2 class="h5 mb-7">Contact Us Today</h2>
+                        </div>
+                    </div>
+                    <!-- End of title-->
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-10">
+                            <div class="card bg-primary shadow-soft border-light mb-6 animate-slide-down">
+                                <div class="card-body px-5 py-5 text-center text-md-left">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-6">
+                                            <h2 class="mb-3">Get in touch</h2>
+                                            <p class="mb-0">
+                                                If you need any help with our products or services, choose one of the following ways to contact us.
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-md-6 mt-4 mt-md-0 text-md-right">
+                                            <a href="./html/pages/contact.html" class="btn btn-primary">
+                                                <span class="mr-1">
+                                                    <span class="fas fa-headphones"></span>
+                                                </span>
+                                                Contact Us
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-10">
+                            <div class="card bg-primary shadow-soft border-light px-4 py-1 mb-6 animate-slide-down">
+                                <div class="card-body text-center text-md-left">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-6">
+                                            <h2 class="mb-3">Join Our Community</h2>
+                                            <p class="mb-4">
+                                                Knowledge is power! Stay connected with us, gain insights, and be part of an innovative network that values continuous learning.
+                                            </p>
+                                            <a href="#" class="btn btn-primary">
+                                                <span class="mr-1">
+                                                    <span class="fas fa-book-open"></span>
+                                                </span>
+                                                Learn More
+                                            </a>
+                                        </div>
+                                        <div class="col-12 col-md-6 mt-4 mt-md-0 text-md-right">
+                                            <img src="./assets/img/illustrations/reading-side.svg" alt="illustration">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of title-->
+
+    </div>
+</div>
+
+        
+    </main>
+<footer class="d-flex pb-5 pt-6 pt-md-7 border-top border-light bg-primary">
+    <div class="container">
+        <div class="row">
+            <!-- About Yisada -->
+            <div class="col-lg-3">
+                <p><strong>Yisada Technology</strong> is dedicated to providing cutting-edge AI solutions, software development, and IT consulting. Our goal is to help businesses innovate and thrive in the digital era.</p>
+                <ul class="d-flex list-unstyled">
+                    <li class="mr-2">
+                        <a href="https://twitter.com/YisadaTech" target="_blank" class="btn btn-icon-only btn-pill btn-primary" aria-label="X social link"
+                           data-toggle="tooltip" data-placement="top" title="Follow us on X">
+                            <span aria-hidden="true" class="fab fa-twitter"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://linkedin.com/company/YisadaTech" target="_blank" class="btn btn-icon-only btn-pill btn-primary" aria-label="LinkedIn social link"
+                           data-toggle="tooltip" data-placement="top" title="Connect with us on LinkedIn">
+                            <span aria-hidden="true" class="fab fa-linkedin"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Pages -->
+            <div class="col-lg-3 mb-5 mb-lg-0">
+                <h5>Pages</h5>
+                <ul class="footer-links list-unstyled mt-2">
+                    <li><a class="p-2" href="./html/pages/about.html">About Us</a></li>
+                    <li><a class="p-2" href="./html/pages/services.html">Services</a></li>
+                    <li><a class="p-2" href="./html/pages/#">Projects</a></li>
+                    <li><a class="p-2" href="./html/pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="col-lg-3 mb-5 mb-lg-0">
+                <h5>Contact</h5>
+                <p class="text-gray font-small mt-2">Have a project in mind? Let’s discuss how we can help.</p>
+                <p>Email: <a href="mailto:info@yisadatech.com">yisadatechnology@gmail.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">+49 1521 4582593</a></p>
+            </div>
+
+            <!-- Subscribe Newsletter -->
+            <div class="col-lg-3 mb-5 mb-lg-0">
+                <h5>Subscribe</h5>
+                <p class="text-gray font-small mt-2">Join our mailing list. Get exclusive updates and insights.</p>
+                <form action="#">
+                    <div class="form-row mb-2">
+                        <div class="col-12">
+                            <input type="email" class="form-control mb-2" placeholder="Your email" name="email" aria-label="Subscribe form" required>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <span>Subscribe</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <p class="text-gray font-small m-0">We respect your privacy. See our <a class="text-black" href="#">Privacy Policy</a>.</p>
+            </div>
+        </div>
+
+        <hr class="my-5">
+        
+        <div class="row">
+            <div class="col text-center">
+                <a href="/" class="d-flex justify-content-center">
+                    <img src="./assets/img/brand/yisada.png" height="40" class="mb-3" alt="Yisada Technology Logo">
+                </a>
+                <div class="d-flex justify-content-center align-items-center" role="contentinfo">
+                    <p class="font-weight-normal font-small mb-0">
+                        Copyright © Yisada Technology <span id="current-year"></span>. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Dynamically update the year
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+</script>
+
+
+<!-- Extras -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+<!-- GSAP Animation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<!-- Hero animation -->
+<script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Slide up effect
+    gsap.to(".hero-title", {
+        opacity: 1,
+        y: 0,
+        duration: 1.8,
+        ease: "power3.out",
+        scrollTrigger: {
+            trigger: ".hero-title",
+            start: "top 80%",
+            toggleActions: "play none none none"
+        }
+    });
+
+    gsap.to(".hero-subtitle", {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        delay: 0.5,
+        ease: "power2.out",
+        scrollTrigger: {
+            trigger: ".hero-title",
+            start: "top 80%",
+            toggleActions: "play none none none"
+        }
+    });
+
+    // Bounce effect after scrolling
+    ScrollTrigger.create({
+        trigger: ".hero-title",
+        start: "top 60%",
+        onEnter: () => {
+            gsap.to(".hero-title", {
+                duration: 1.4,
+                y: -10,
+                ease: "power2.out",
+                yoyo: true,
+                repeat: 1
+            });
+        }
+    });
+</script>
+
+
+<script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from("#hero-title, #hero-subtitle, #hero-img", {
+        opacity: 0,
+        y: 50,
+        duration: 2,
+        stagger: 0.3,
+        scrollTrigger: {
+            trigger: "#hero-title",
+            start: "top 80%",
+            toggleActions: "play none none none"
+        }
+    });
+</script>
+
+
+    <!-- Core -->
+<script src="./vendor/jquery/dist/jquery.min.js"></script>
+<script src="./vendor/popper.js/dist/umd/popper.min.js"></script>
+<script src="./vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./vendor/headroom.js/dist/headroom.min.js"></script>
+
+<!-- Vendor JS -->
+<script src="./vendor/onscreen/dist/on-screen.umd.min.js"></script>
+<script src="./vendor/nouislider/distribute/nouislider.min.js"></script>
+<script src="./vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+<script src="./vendor/waypoints/lib/jquery.waypoints.min.js"></script>
+<script src="./vendor/jarallax/dist/jarallax.min.js"></script>
+<script src="./vendor/jquery.counterup/jquery.counterup.min.js"></script>
+<script src="./vendor/jquery-countdown/dist/jquery.countdown.min.js"></script>
+<script src="./vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<script src="./vendor/prismjs/prism.js"></script>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- Neumorphism JS -->
+<script src="./assets/js/neumorphism.js"></script>
+</body>
+
+</html>
