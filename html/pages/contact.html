@@ -147,7 +147,7 @@
                 </ul>
             </div>
             <div class="d-flex align-items-center">
-                <a href="#" target="_blank" class="btn btn-primary text-secondary mr-3"><i class="far fa-calendar-alt mr-2"></i> Free Consultation</a>
+                <a href="https://calendly.com/yisadatechnology-info/30min" target="_blank" class="btn btn-primary text-secondary mr-3"><i class="far fa-calendar-alt mr-2"></i> Free Consultation</a>
                  <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -198,7 +198,7 @@
                                                 <span class="fas fa-headphones-alt"></span>
                                             </div>
                                             <h2 class="h5 icon-box-title">Call</h2>
-                                            <span>+49 1521 4582593</span>
+                                            <span>+49-162-4621903</span>
                                             <div class="text-small text-gray">
                                                 Mon - Sat, 8am - 8pm
                                             </div>
@@ -212,14 +212,18 @@
                                                 <span class="far fa-paper-plane"></span>
                                             </div>
                                             <h2 class="h5 icon-box-title">Email</h2>
-                                            <a href="mailto:yisadatechnology@gmail.com">yisadatechnology@gmail.com</a>
-                                            <br><a href="mailto:yisadatechnology@gmail.com">yisadatechnology@gmail.com</a>
+                                            <a href="mailto:info@yisadatechnology.com">info@yisadatechnology.com</a>
+                                            <!-- <br> <a href="mailto:yisadatechnology@gmail.com">yisadatechnology@gmail.com</a> -->
                                         </div>
                                         <!-- End of Email Box -->
                                     </div>
                                 </div>
                             </div>
-                            <form class="col-12 col-md-8 mx-auto" name="contact" netlify>
+                            <form class="col-12 col-md-8 mx-auto" name="contact" method="POST" data-netlify="true" netlify>
+                                <!-- Success Msg -->
+                        <div id="success-message" class="alert alert-success" role="alert" style="display: none;">
+                            <strong>Success!</strong> Your message has been sent. We’ll get back to you as soon as possible.
+                        </div>
                                 <!-- Form -->
                                 <div class="form-group">
                                     <label for="nameInputIcon2">Your Name</label>
@@ -227,7 +231,7 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"><span class="far fa-user-circle"></span></span>
                                         </div>
-                                        <input class="form-control" id="nameInputIcon2" name="name" placeholder="e.g. Bonnie Green" type="text" aria-label="contact name input">
+                                        <input class="form-control" id="nameInputIcon2" name="name" placeholder="e.g. John Harper" type="text" aria-label="contact name input" required>
                                     </div>
                                 </div>
                                 <!-- Form -->
@@ -237,20 +241,22 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"><span class="far fa-envelope"></span></span>
                                         </div>
-                                        <input class="form-control" id="emailInputIcon2" name="email" placeholder="example@company.com" type="email" aria-label="contact email input">
+                                        <input class="form-control" id="emailInputIcon2" name="email" placeholder="example@gmail.com" type="email" aria-label="contact email input" required>
                                     </div>
                                 </div>
                                 <!-- Form -->
                                 <div class="form-group">
-                                    <label for="exampleFormControlTextarea2">Your Email</label>
-                                    <textarea class="form-control" name="message" placeholder="Enter your message..." id="exampleFormControlTextarea2" rows="4"></textarea>
+                                    <label for="exampleFormControlTextarea2">Your Message</label>
+                                    <textarea class="form-control" name="message" placeholder="Enter your message..." id="exampleFormControlTextarea2" rows="4" required></textarea>
                                 </div>
                                 <!-- End of Form -->
+                                <div class="card-footer px-0 mx-auto">
+                                    <button type="submit" class="btn btn-primary">Send message</button>
+                                </div>
+
                             </form>
-                            <div class="card-footer px-0 mx-auto">
-                                <button type="submit" class="btn btn-primary">Send message</button>
-                            </div>
                         </div>
+
                         <!-- End of Contact Card -->
                     </div>
                 </div>
@@ -258,92 +264,78 @@
         </section>
         <!-- End of section -->
     </main>
-    <footer class="d-flex pb-5 pt-6 pt-md-7 border-top border-light bg-primary">
+      <footer class="d-flex pb-5 pt-6 pt-md-7 border-top border-light bg-primary">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4">
-                <p><strong>Neumorphism UI PRO</strong> is a premium Bootstrap UI Kit built based on the newest design trend called Neumorphism.</p>
-                <ul class="d-flex list-unstyled mb-5 mb-lg-0">
+            <!-- About Yisada -->
+            <div class="col-lg-3">
+                <p><strong>Yisada Technology</strong> is dedicated to providing cutting-edge AI solutions, software development, and IT consulting. Our goal is to help businesses innovate and thrive in the digital era.</p>
+                <ul class="d-flex list-unstyled">
                     <li class="mr-2">
-                        <a href="https://twitter.com/themesberg" target="_blank" class="btn btn-icon-only btn-pill btn-primary" aria-label="twitter social link"
-                        data-toggle="tooltip" data-placement="top" title="Follow @themesberg on Twitter">
+                        <a href="https://x.com/yisadatech" target="_blank" class="btn btn-icon-only btn-pill btn-primary" aria-label="X social link"
+                           data-toggle="tooltip" data-placement="top" title="Follow us on X">
                             <span aria-hidden="true" class="fab fa-twitter"></span>
                         </a>
                     </li>
-                    <li class="mr-2">
-                        <a href="https://www.facebook.com/themesberg/" target="_blank" class="btn btn-icon-only btn-pill btn-primary" aria-label="facebook social link"
-                        data-toggle="tooltip" data-placement="top" title="Like @themesberg on Facebook">
-                            <span aria-hidden="true" class="fab fa-facebook"></span>
-                        </a>
-                    </li>
-                    <li class="mr-2">
-                        <a href="https://github.com/themesberg" target="_blank" class="btn btn-icon-only btn-pill btn-primary" aria-label="github social link"
-                        data-toggle="tooltip" data-placement="top" title="Open source projects">
-                            <span aria-hidden="true" class="fab fa-github"></span>
-                        </a>
-                    </li>
                     <li>
-                        <a href="https://dribbble.com/themesberg" target="_blank" class="btn btn-icon-only btn-pill btn-primary" aria-label="dribbble social link"
-                        data-toggle="tooltip" data-placement="top" title="Follow us on Dribbble">
-                            <span aria-hidden="true" class="fab fa-dribbble"></span>
+                        <a href="https://www.linkedin.com/in/yisada-technology-59b62535b/" target="_blank" class="btn btn-icon-only btn-pill btn-primary" aria-label="LinkedIn social link"
+                           data-toggle="tooltip" data-placement="top" title="Connect with us on LinkedIn">
+                            <span aria-hidden="true" class="fab fa-linkedin"></span>
                         </a>
                     </li>
                 </ul>
             </div>
-            <div class="col-6 col-lg-2 mb-5 mb-lg-0">
-                <h5>Themesberg</h5>
+
+            <!-- Pages -->
+            <div class="col-lg-3 mb-5 mb-lg-0">
+                <h5>Pages</h5>
                 <ul class="footer-links list-unstyled mt-2">
-                    <li class="mb-1"><a class="p-2" target="_blank" href="https://themesberg.com/blog">Blog</a></li>
-                    <li class="mb-1"><a class="p-2" target="_blank" href="https://themesberg.com/products">Products</a></li>
-                    <li class="mb-1"><a class="p-2" target="_blank" href="https://themesberg.com/about">About Us</a></li>
-                    <li><a class="p-2" target="_blank" href="https://themesberg.com/contact">Contact Us</a></li>
+                    <li><a class="p-2" href="about.html">About Us</a></li>
+                    <li><a class="p-2" href="services.html">Services</a></li>
+                    <li><a class="p-2" href="#">Projects</a></li>
+                    <li><a class="p-2" href="contact.html">Contact</a></li>
                 </ul>
             </div>
-            <div class="col-6 col-lg-2 mb-5 mb-lg-0">
-                <h5>Other</h5>
-                <ul class="footer-links list-unstyled mt-2">
-                    <li class="mb-1"><a class="p-2" href="https://themesberg.com/docs/pixel-bootstrap/getting-started/overview/" target="_blank">Docs
-                        <span class="badge badge-gray text-uppercase ml-2">v1.0</span></a>
-                    </li>
-                    <li class="mb-1">
-                        <a class="p-2" href="https://themesberg.com/docs/pixel-bootstrap/getting-started/changelog" target="_blank">Changelog</a>
-                    </li>
-                    <li class="mb-1">
-                        <a class="p-2" target="_blank" href="https://themesberg.com/licensing">License</a>
-                    </li>
-                    <li>
-                        <a class="p-2" target="_blank" href="https://github.com/themesberg/pixel-bootstrap-ui-kit/issues">Support</a>
-                    </li>
-                </ul>
+
+            <!-- Contact -->
+            <div class="col-lg-3 mb-5 mb-lg-0">
+                <h5>Contact</h5>
+                <p class="text-gray font-small mt-2">Have a project in mind? Let’s discuss how we can help.</p>
+                <p>Email: <a href="mailto:info@yisadatech.com">yisadatechnology@gmail.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">+49 1521 4582593</a></p>
             </div>
-            <div class="col-12 col-lg-4 mb-5 mb-lg-0">
+
+            <!-- Subscribe Newsletter -->
+            <div class="col-lg-3 mb-5 mb-lg-0">
                 <h5>Subscribe</h5>
-                <p class="text-gray font-small mt-2">Join our mailing list. We write rarely, but only the best content.</p>
+                <p class="text-gray font-small mt-2">Join our mailing list. Get exclusive updates and insights.</p>
                 <form action="#">
                     <div class="form-row mb-2">
                         <div class="col-12">
-                            <label class="h6 font-weight-normal d-none" for="exampleInputEmail3">Email address</label>
-                            <input type="email" class="form-control mb-2" placeholder="example@company.com" name="email" aria-label="Subscribe form" id="exampleInputEmail3" required>
+                            <input type="email" class="form-control mb-2" placeholder="Your email" name="email" aria-label="Subscribe form" required>
                         </div>
                         <div class="col-12">
-                            <button type="submit" class="btn btn-primary btn-block" data-loading-text="Sending">
+                            <button type="submit" class="btn btn-primary btn-block">
                                 <span>Subscribe</span>
                             </button>
                         </div>
                     </div>
                 </form>
-                <p class="text-gray font-small m-0">We’ll never share your details. See our <a class="text-black" href="#">Privacy Policy</a></p>
+                <p class="text-gray font-small m-0">We respect your privacy. See our <a class="text-black" href="#">Privacy Policy</a>.</p>
             </div>
         </div>
+
         <hr class="my-5">
+        
         <div class="row">
-            <div class="col">
-                <a href="https://themesberg.com" target="_blank" class="d-flex justify-content-center">
-                    <img src="../../assets/img/themesberg.svg" height="25" class="mb-3" alt="Themesberg Logo">
+            <div class="col text-center">
+                <a href="/" class="d-flex justify-content-center">
+                    <img src="./assets/img/brand/yisada.png" height="40" class="mb-3" alt="Yisada Technology Logo">
                 </a>
-            <div class="d-flex text-center justify-content-center align-items-center" role="contentinfo">
-                <p class="font-weight-normal font-small mb-0">Copyright © Themesberg
-                    <span class="current-year">2020</span>. All rights reserved.</p>
+                <div class="d-flex justify-content-center align-items-center" role="contentinfo">
+                    <p class="font-weight-normal font-small mb-0">
+                        Copyright © Yisada Technology <span id="current-year"></span>. All rights reserved.
+                    </p>
                 </div>
             </div>
         </div>
@@ -355,6 +347,19 @@
 <script src="../../vendor/popper.js/dist/umd/popper.min.js"></script>
 <script src="../../vendor/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="../../vendor/headroom.js/dist/headroom.min.js"></script>
+
+<!-- Success msg -->
+<script>
+  document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevents the default form submission
+
+    // Simulating form submission success
+    setTimeout(function() {
+      document.getElementById('success-message').style.display = 'block'; // Shows the success message
+    }, 1000);
+  });
+</script>
+
 
 <!-- Vendor JS -->
 <script src="../../vendor/onscreen/dist/on-screen.umd.min.js"></script>
