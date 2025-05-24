@@ -49,6 +49,9 @@
 <!-- Pixel CSS -->
 <link type="text/css" href="./css/neumorphism.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
 
 <script type="text/javascript">
   function googleTranslateElementInit() {
@@ -167,6 +170,44 @@
     border-radius: 4px;
   }
 
+  .hero-carousel {
+  height: 90vh;
+  overflow: hidden;
+}
+
+.hero-slide {
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-slide .overlay {
+  background: rgba(0, 0, 0, 0.55);
+  padding: 3rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.hero-slide .overlay h1,
+.hero-slide .overlay p {
+  color: #fff;
+}
+
+/* free consult */
+.responsive-btn {
+    font-size: 0.6rem;
+  }
+
+  @media (min-width: 768px) {
+    .responsive-btn {
+      font-size: 1rem; /* or any size you want for large screens */
+    }
+  }
+
 </style>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -176,7 +217,8 @@
 <body>
     <header class="header-global">
     <nav id="navbar-main" aria-label="Primary navigation" class="navbar navbar-main navbar-expand-lg navbar-theme-primary headroom navbar-light navbar-transparent navbar-theme-primary">
-        <div class="container position-relative">
+        <!-- <div class="container position-relative"> -->
+        <div class="container d-flex justify-content-between align-items-center flex-nowrap">
             <a class="navbar-brand shadow-soft py-2 px-3 rounded border border-light mr-lg-4" href="./index.html">
                 <img class="navbar-brand-dark" src="./assets/img/brand/yisada.png" style="height:35px;" alt="Logo light">
                 <img class="navbar-brand-light" src="./assets/img/brand/yisada.png" style="height:35px;" alt="Logo dark">
@@ -202,36 +244,66 @@
                     <li><a class="dropdown-item" href="./html/pages/contact.html">Contact</a></li>
                 </ul>
             </div>
-            <div class="d-flex align-items-center">
-                <a href="https://calendly.com/yisadatechnology-info/30min" target="_blank" class="btn btn-primary text-secondary mr-3"><i class="far fa-calendar-alt mr-2"></i> Free Consultation</a>
+            <!-- <div class="d-flex align-items-center"> -->
+           <div class="d-flex align-items-center">
+              <a href="https://calendly.com/yisadatechnology-info/30min"
+                 class="btn btn-primary text-secondary mr-3 responsive-btn"
+                 target="_blank"><i class="far fa-calendar-alt mr-2"></i> Free Consultation
+              </a>
+              <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbar_global"
+                      aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+
+<!-- 
+            <div class="d-flex align-items-center ml-auto">
+
+                <a href="https://calendly.com/yisadatechnology-info/30min" target="_blank" class="btn btn-primary text-secondary mr-3" style="font-size: 0.7rem;"><i class="far fa-calendar-alt mr-2"></i> Free Consult</a>
                  <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-            </div>
+            </div> -->
         </div>
     </nav>
 </header>
     
     <main>
-        
-    <!-- Hero Section -->
-    <section class="section bg-soft pb-5 overflow-hidden z-2">
-        <div class="container z-2">
-            <div class="row justify-content-center text-center pt-6">
-                <div class="col-lg-8 col-xl-8">
-                    <h1 class="display-1 fw-bold hero-title">Yisada Technology</h1> <hr>
-                    <p class="lead px-md-6 mb-5 hero-subtitle">
-                        Empowering businesses with <strong>cutting-edge AI solutions, software development, and IT consulting.</strong> Let’s innovate together!
-                    </p>
-                    <div class="d-flex flex-column flex-wrap flex-md-row justify-content-md-center mb-5">
-                        <a href="#" class="btn btn-primary mb-3 mb-lg-0 mr-3">
-                            <i class="fas fa-paper-plane-alt mr-2"></i> Get Started
-                        </a>
-                    </div>
+        <!-- Hero Section with Image and Text Carousel -->
+        <section class="hero-carousel position-relative">
+          <div class="swiper heroSwiper">
+            <div class="swiper-wrapper">
+
+              <!-- Slide 1 -->
+              <div class="swiper-slide hero-slide" style="background-image: url('assets/img/carousel/white_tech.jpg');">
+                <div class="overlay">
+                  <h1 class="display-1 fw-bold text-white">Yisada Technology</h1>
+                  <p class="lead text-white">Empowering businesses with AI, software, and IT consulting.</p>
                 </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="swiper-slide hero-slide" style="background-image: url('assets/img/carousel/green_tech.jpg');">
+                <div class="overlay">
+                  <h1 class="display-1 fw-bold text-white">Software Built to Scale</h1>
+                  <p class="lead text-white">Robust web and mobile applications tailored to you.</p>
+                </div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="swiper-slide hero-slide" style="background-image: url('assets/img/carousel/innovation1.jpg');">
+                <div class="overlay">
+                  <h1 class="display-1 fw-bold text-white">Innovation Meets Simplicity</h1>
+                  <p class="lead text-white">Delivering impactful AI-driven solutions with simplicity.</p>
+                </div>
+              </div>
+
             </div>
-        </div>
-    </section> 
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </section>
+
 
         <!-- After Hero/What We Are -->
         <section class="section section-lg pt-0">
@@ -315,8 +387,12 @@
         <!-- End of Mission & Vision Section -->
 
 
+
+
         <!-- Our Services -->
-        <section class="section section-lg" id="services">
+        <section class="section position-relative text-black" id="services" style="background: url('assets/img/solutions2.jpg') center center / cover no-repeat;">
+  <div class="overlay position-absolute w-100 h-100" style="background-color: rgba(0, 0, 0, 0.5); top: 0; left: 0;"></div>
+
             <div class="container">
                 <div class="row justify-content-center text-center">
                     <div class="col-lg-8">
@@ -355,7 +431,6 @@
                 </div>
             </div>
         </section>
-        <!-- End of Our Services -->
 
         <!-- Why Choose Us -->
         <div class="row">
@@ -473,17 +548,17 @@
                                 <div class="card-body text-center text-md-left">
                                     <div class="row align-items-center">
                                         <div class="col-md-6">
-                                            <h2 class="mb-3">Join Our Community</h2>
+                                            <h2 class="mb-3">Stay Informed</h2>
                                             <p class="mb-4">
                                                 Knowledge is power! Stay connected with us, gain insights, and be part of an innovative network that values continuous learning.
                                             </p>
-                                            <a href="#" class="btn btn-primary">
+                                            <!-- <a href="#" class="btn btn-primary">
                                                 <span class="mr-1">
                                                     <span class="fas fa-book-open"></span>
                                                 </span>
                                                 Learn More
                                             </a>
-                                        </div>
+ -->                                        </div>
                                         <div class="col-12 col-md-6 mt-4 mt-md-0 text-md-right">
                                             <img src="./assets/img/illustrations/reading-side.svg" alt="illustration">
                                         </div>
@@ -529,7 +604,7 @@
                 <ul class="footer-links list-unstyled mt-2">
                     <li><a class="p-2" href="./html/pages/about.html">About Us</a></li>
                     <li><a class="p-2" href="./html/pages/services.html">Services</a></li>
-                    <li><a class="p-2" href="./html/pages/#">Projects</a></li>
+                    <!-- <li><a class="p-2" href="./html/pages/#">Projects</a></li> -->
                     <li><a class="p-2" href="./html/pages/contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -538,7 +613,7 @@
             <div class="col-lg-3 mb-5 mb-lg-0">
                 <h5>Contact</h5>
                 <p class="text-gray font-small mt-2">Have a project in mind? Let’s discuss how we can help.</p>
-                <p>Email: <a href="mailto:info@yisadatech.com">yisadatechnology@gmail.com</a></p>
+                <p>Email: <a href="mailto:info@yisadatechnology.com">info@yisadatechnology.com</a></p>
                 <p>Phone: <a href="tel:+1234567890">+49 1521 4582593</a></p>
             </div>
 
@@ -558,7 +633,7 @@
                         </div>
                     </div>
                 </form>
-                <p class="text-gray font-small m-0">We respect your privacy. See our <a class="text-black" href="#">Privacy Policy</a>.</p>
+                <p class="text-gray font-small m-0">We respect your privacy. See our <a class="text-black" href="./html/pages/privacy_policy.html">Privacy Policy</a>.</p>
             </div>
         </div>
 
@@ -566,7 +641,7 @@
         
         <div class="row">
             <div class="col text-center">
-                <a href="/" class="d-flex justify-content-center">
+                <a href="#" class="d-flex justify-content-center">
                     <img src="./assets/img/brand/yisada.png" height="40" class="mb-3" alt="Yisada Technology Logo">
                 </a>
                 <div class="d-flex justify-content-center align-items-center" role="contentinfo">
@@ -656,6 +731,28 @@
             toggleActions: "play none none none"
         }
     });
+</script>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper(".heroSwiper", {
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    effect: 'fade',
+    fadeEffect: { crossFade: true },
+  });
 </script>
 
 

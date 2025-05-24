@@ -4,7 +4,7 @@
 <head> 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- Primary Meta Tags -->
-<title>YISADA TECHNOLOGY|About Us - Innovating Tomorrow, Today</title>
+<title>YISADA TECHNOLOGY - About Us</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="title" content=" Yisada Technology">
 <meta name="author" content="Dams">
@@ -128,6 +128,17 @@
     opacity: 1;
     transform: translateX(0);
 }
+
+/* free consult */
+.responsive-btn {
+    font-size: 0.6rem;
+  }
+
+  @media (min-width: 768px) {
+    .responsive-btn {
+      font-size: 1rem; /* or any size you want for large screens */
+    }
+
 </style>
 
 <!-- 
@@ -245,35 +256,46 @@
                     <li><a class="dropdown-item" href="contact.html">Contact</a></li>
                 </ul>
             </div>
-            <div class="d-flex align-items-center">
-                <a href="https://calendly.com/yisadatechnology-info/30min" target="_blank" class="btn btn-primary text-secondary mr-3"><i class="far fa-calendar-alt mr-2"></i> Free Consultation</a>
-                 <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+               <div class="d-flex align-items-center">
+                  <a href="https://calendly.com/yisadatechnology-info/30min"
+                     class="btn btn-primary text-secondary mr-3 responsive-btn"
+                     target="_blank"><i class="far fa-calendar-alt mr-2"></i> Free Consultation
+                  </a>
+                  <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbar_global"
+                          aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
+                  </button>
+                </div>
         </div>
     </nav>
 </header>
     <main>
 
 
-        <!-- Hero -->
-        <div class="section section-header pb-7">
+        <!-- Hero Section -->
+        <section class="section section-header pb-7">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-lg-8 text-center hero-content">
-                        <h1 class="display-2 mb-4">About Us</h1>
-                        <p class="lead mb-5 hero-text">
+                <div class="row justify-content-center position-relative text-white" 
+                     style="background: url('../../assets/img/aboutus.jpg') center center / cover no-repeat; border-radius: 12px; overflow: hidden;">
+
+                    <!-- Optional overlay for readability -->
+                    <div class="overlay position-absolute w-100 h-100" 
+                         style="background-color: rgba(0, 0, 0, 0.5); top: 0; left: 0;"></div>
+
+                    <div class="col-12 col-lg-8 text-center hero-content py-6 position-relative z-2">
+                        <h1 class="display-2 mb-4 text-white">About Us</h1>
+                        <p class="lead mb-5 text-white">
                             Yisada Technology is a leading AI and software development company, empowering businesses with innovative solutions.
                         </p>
-                        <a class="btn btn-primary" href="./contact.html">
-                            <span class="fas fa-book-reader mr-2"></span>Our works
-                        </a>
+                       <!--  <a class="btn btn-primary" href="./services.html">
+                            <span class="fas fa-book-reader mr-2"></span>Our Works
+                        </a> -->
                     </div>
                 </div>
-            </div>        
-        </div>
-        <!-- End of Hero section -->
+            </div>
+        </section>
+         <!-- End of Hero section -->
+
 
         <!-- What We Do -->
         <section class="section section-lg pt-0">
@@ -336,14 +358,14 @@
  -->
                     <div class="col-md-6 col-xl-6 mb-5" >
                         <div class="card bg-primary shadow-soft border-light organic-radius p-3">
-                            <img class="organic-radius img-fluid" src="../../assets/img/about-us-1.jpg" alt="modern desk">
+                            <img class="organic-radius img-fluid" src="../../assets/img/195.jpg" alt="modern desk">
                         </div>
                     </div>
 
                     <div class="col-md-6 col-xl-5 text-center text-md-left">
-                        <h2 class="h1 mb-4">Design with us, Develop Anything.</h2>
-                        <p class="lead">Founded in January, 2025, Yisada Technology was born out of a passion for innovation and a commitment to delivering cutting-edge digital solutions. We specialize in custom software development, AI-powered automation, data analytics, and IT consulting, empowering businesses to thrive in an increasingly tech-driven world. From building intuitive web and mobile applications to crafting intelligent chatbots and data-driven dashboards, we design and develop solutions that drive efficiency, scalability, and growth. Whether it’s SMEs looking to scale or enterprises seeking digital transformation, we tailor our expertise to meet diverse business needs.</p>
-                        <p class="lead">Our small team is active in the creative community, endlessly interested in what’s next, and generally pleasant to be around.</p>
+                        <h2 class="h1 mb-4">Design Better, Develop Faster.</h2>
+                        <p class="lead">Founded in January 2025, Yisada Technology was established with a clear mission: to drive innovation through cutting-edge digital solutions. We specialize in custom software development, AI-powered automation, data analytics, and IT consulting—empowering businesses to scale and thrive in an increasingly tech-driven world. From intuitive web and mobile applications to intelligent chatbots and data-driven dashboards, our solutions are designed to enhance efficiency, scalability, and sustainable growth. Whether supporting startups or guiding enterprise digital transformations, we tailor our expertise to meet diverse business needs.</p>
+                        <p class="lead">Our team is agile, innovative, and deeply engaged in the evolving tech landscape. We’re driven by curiosity, collaboration, and a commitment to excellence.</p>
                         <!-- <img src="../../assets/img/signature.svg" alt="signature" class="mt-4" width="150"> -->
                     </div>
                 </div>
@@ -542,7 +564,7 @@
                 <ul class="footer-links list-unstyled mt-2">
                     <li><a class="p-2" href="about.html">About Us</a></li>
                     <li><a class="p-2" href="services.html">Services</a></li>
-                    <li><a class="p-2" href="#">Projects</a></li>
+                    <!-- <li><a class="p-2" href="#">Projects</a></li> -->
                     <li><a class="p-2" href="contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -551,7 +573,7 @@
             <div class="col-lg-3 mb-5 mb-lg-0">
                 <h5>Contact</h5>
                 <p class="text-gray font-small mt-2">Have a project in mind? Let’s discuss how we can help.</p>
-                <p>Email: <a href="mailto:info@yisadatech.com">yisadatechnology@gmail.com</a></p>
+                <p>Email: <a href="mailto:info@yisadatechnology.com">info@yisadatechnology</a></p>
                 <p>Phone: <a href="tel:+1234567890">+49 1521 4582593</a></p>
             </div>
 
@@ -571,7 +593,7 @@
                         </div>
                     </div>
                 </form>
-                <p class="text-gray font-small m-0">We respect your privacy. See our <a class="text-black" href="#">Privacy Policy</a>.</p>
+                <p class="text-gray font-small m-0">We respect your privacy. See our <a class="text-black" href="privacy_policy.html">Privacy Policy</a>.</p>
             </div>
         </div>
 
@@ -579,8 +601,8 @@
         
         <div class="row">
             <div class="col text-center">
-                <a href="/" class="d-flex justify-content-center">
-                    <img src="./assets/img/brand/yisada.png" height="40" class="mb-3" alt="Yisada Technology Logo">
+                <a href="#" class="d-flex justify-content-center">
+                    <img src="../../assets/img/brand/yisada.png" height="40" class="mb-3" alt="Yisada Technology Logo">
                 </a>
                 <div class="d-flex justify-content-center align-items-center" role="contentinfo">
                     <p class="font-weight-normal font-small mb-0">
